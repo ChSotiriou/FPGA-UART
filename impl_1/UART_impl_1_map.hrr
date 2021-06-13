@@ -1,0 +1,31 @@
+---------------------------------------------------
+Report for cell main
+   Instance path: main
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                 IOLGC	       2.00        100.0
+                                  LUT4	        300        100.0
+                                 IOREG	          2        100.0
+                                 IOBUF	          5        100.0
+                                PFUREG	        149        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+uart_recv(baudRate=115200,clkFreq=12000000.0)	          1        38.0
+uart_send(baudRate=115200,clkFreq=12000000.0)	          1        56.0
+---------------------------------------------------
+Report for cell uart_send(baudRate=115200,clkFreq=12000000.0)
+   Instance path: main/send
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                 IOLGC	       1.00        50.0
+                                  LUT4	        168        56.0
+                                 IOREG	          1        50.0
+                                PFUREG	         74        49.7
+---------------------------------------------------
+Report for cell uart_recv(baudRate=115200,clkFreq=12000000.0)
+   Instance path: main/recv
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        114        38.0
+                                 IOBUF	          1        20.0
+                                PFUREG	         75        50.3

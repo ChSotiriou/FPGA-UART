@@ -1,0 +1,8 @@
+ldc_set_location -site {20} [get_ports clk]
+ldc_set_location -site {41} [get_ports led_red]
+ldc_set_port -iobuf {PULLMODE=NA} [get_ports clk]
+ldc_set_port -iobuf {DRIVE=NA PULLMODE=NA} [get_ports rx]
+ldc_set_location -site {23} [get_ports tx]
+ldc_set_location -site {39} [get_ports led_green]
+ldc_set_port -iobuf {PULLMODE=NA DRIVE=8} [get_ports tx]
+ldc_set_location -site {25} [get_ports rx]

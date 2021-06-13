@@ -1,0 +1,36 @@
+----------------------------------------------------------------------
+Report for cell main.TECH
+Register bits:  149 of 5280 (2.822%)
+I/O cells:      4
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               CCU2        68          100.0
+                            FD1P3XZ       149          100.0
+                                 IB         2          100.0
+                              IOL_B         1          100.0
+                               LUT4       147          100.0
+                                 OB         3          100.0
+SUB MODULES
+uart_recv(baudRate=115200,clkFreq=12000000.0)         1
+uart_send(baudRate=115200,clkFreq=12000000.0)         1
+                              TOTAL       372
+----------------------------------------------------------------------
+Report for cell uart_send(baudRate=115200,clkFreq=12000000.0).v1
+Instance Path : send
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        34           50.0
+                            FD1P3XZ        74           49.7
+                              IOL_B         1          100.0
+                               LUT4       100           68.0
+                              TOTAL       209
+----------------------------------------------------------------------
+Report for cell uart_recv(baudRate=115200,clkFreq=12000000.0).v1
+Instance Path : recv
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        34           50.0
+                            FD1P3XZ        75           50.3
+                                 IB         1           50.0
+                               LUT4        46           31.3
+                              TOTAL       156

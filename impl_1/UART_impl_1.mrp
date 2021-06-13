@@ -1,0 +1,207 @@
+         Lattice Mapping Report File for Design Module 'UART_impl_1'
+
+Target Vendor:        LATTICE
+Target Device:        iCE40UP5KSG48
+Target Performance:   High-Performance_1.2V
+
+Mapper:    version Radiant Software (64-bit) 2.2.0.97.3
+Mapped on: Sat Jun 12 21:19:08 2021
+
+Design Information
+------------------
+
+Command line:   map UART_impl_1_syn.udb C:/Users/~Christos~/Documents/FPGA
+     Projects/UART/UART/pin_assignment.pdc -o UART_impl_1_map.udb -mp
+     UART_impl_1.mrp -hierrpt -gui
+
+Design Summary
+--------------
+
+   Number of slice registers: 149 out of  5280 (3%)
+   Number of I/O registers:      2 out of   117 (2%)
+   Number of LUT4s:           300 out of  5280 (6%)
+      Number of logic LUT4s:             148
+      Number of inserted feedthru LUT4s:  16
+      Number of ripple logic:             68 (136 LUT4s)
+   Number of IO sites used:   5 out of 39 (13%)
+      Number of IO sites used for general PIOs: 3
+      Number of IO sites used for I3Cs: 0 out of 2 (0%)
+      Number of IO sites used for PIOs+I3Cs: 3 out of 36 (8%)
+      (note: If I3C is not used, its site can be used as general PIO)
+      Number of IO sites used for OD+RGB IO buffers: 2 out of 3 (67%)
+   Number of DSPs:             0 out of 8 (0%)
+   Number of I2Cs:             0 out of 2 (0%)
+   Number of High Speed OSCs:  0 out of 1 (0%)
+   Number of Low Speed OSCs:   0 out of 1 (0%)
+   Number of RGB PWM:          0 out of 1 (0%)
+   Number of RGB Drivers:      0 out of 1 (0%)
+   Number of SCL FILTERs:      0 out of 2 (0%)
+   Number of SRAMs:            0 out of 4 (0%)
+   Number of WARMBOOTs:        0 out of 1 (0%)
+   Number of SPIs:             0 out of 2 (0%)
+   Number of EBRs:             0 out of 30 (0%)
+   Number of PLLs:             0 out of 1 (0%)
+   Number of Clocks:  1
+      Net clk_c: 106 loads, 106 rising, 0 falling (Driver: Port clk)
+   Number of Clock Enables:  13
+      Net send.n48: 8 loads, 8 SLICEs
+      Net send.n1643: 17 loads, 17 SLICEs
+      Net send.n1332: 2 loads, 2 SLICEs
+      Net recv.n1065: 2 loads, 2 SLICEs
+      Net recv.n1622: 1 loads, 1 SLICEs
+      Net recv.n1630: 1 loads, 1 SLICEs
+      Net recv.n1623: 1 loads, 1 SLICEs
+      Net recv.n1644: 17 loads, 17 SLICEs
+      Net recv.n1631: 1 loads, 1 SLICEs
+      Net recv.n1624: 1 loads, 1 SLICEs
+      Net recv.n1621: 1 loads, 1 SLICEs
+      Net recv.n1629: 1 loads, 1 SLICEs
+      Net recv.n1632: 1 loads, 1 SLICEs
+   Number of LSRs:  35
+      Net send.n2673: 1 loads, 1 SLICEs
+      Net send.n2701: 1 loads, 1 SLICEs
+
+                                    Page 1
+
+
+
+
+
+Design Summary (cont)
+---------------------
+      Net send.n1670: 17 loads, 17 SLICEs
+      Net send.n2699: 1 loads, 1 SLICEs
+      Net send.n2719: 1 loads, 1 SLICEs
+      Net send.n2727: 1 loads, 1 SLICEs
+      Net send.n2705: 1 loads, 1 SLICEs
+      Net send.n2729: 1 loads, 1 SLICEs
+      Net send.n2703: 1 loads, 1 SLICEs
+      Net send.n2753: 1 loads, 1 SLICEs
+      Net send.n2757: 1 loads, 1 SLICEs
+      Net send.n2749: 1 loads, 1 SLICEs
+      Net send.n2747: 1 loads, 1 SLICEs
+      Net send.n2709: 1 loads, 1 SLICEs
+      Net send.n2707: 1 loads, 1 SLICEs
+      Net send.n2713: 1 loads, 1 SLICEs
+      Net send.n2685: 1 loads, 1 SLICEs
+      Net send.n2683: 1 loads, 1 SLICEs
+      Net send.n2677: 1 loads, 1 SLICEs
+      Net send.n2711: 1 loads, 1 SLICEs
+      Net send.n2691: 1 loads, 1 SLICEs
+      Net send.n2717: 1 loads, 1 SLICEs
+      Net send.n2697: 1 loads, 1 SLICEs
+      Net send.n2695: 1 loads, 1 SLICEs
+      Net send.n2715: 1 loads, 1 SLICEs
+      Net send.n2689: 1 loads, 1 SLICEs
+      Net send.n2687: 1 loads, 1 SLICEs
+      Net send.n2675: 1 loads, 1 SLICEs
+      Net send.n2681: 1 loads, 1 SLICEs
+      Net send.n2693: 1 loads, 1 SLICEs
+      Net send.n2743: 1 loads, 1 SLICEs
+      Net send.n2721: 1 loads, 1 SLICEs
+      Net send.n2679: 1 loads, 1 SLICEs
+      Net recv.n250: 17 loads, 17 SLICEs
+      Net recv.n1701: 17 loads, 17 SLICEs
+   Top 10 highest fanout non-clock nets:
+      Net send.uart_send_state[0]: 71 loads
+      Net send.uart_send_state[1]: 70 loads
+      Net send.n1604: 39 loads
+      Net dataSendFlag: 35 loads
+      Net recv.n1644: 17 loads
+      Net recv.n1701: 17 loads
+      Net recv.n250: 17 loads
+      Net send.n1643: 17 loads
+      Net send.n1670: 17 loads
+      Net led_red_c_c: 15 loads
+
+
+
+
+   Number of warnings:  0
+   Number of errors:    0
+
+Design Errors/Warnings
+----------------------
+
+   No errors or warnings present.
+
+
+
+                                    Page 2
+
+
+
+
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+-------+-------+-----------+
+| IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
+|                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
++---------------------+-----------+-----------+-------+-------+-----------+
+| rx                  | INPUT     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| tx                  | OUTPUT    | LVCMOS33  | O     |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| clk                 | INPUT     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| led_red             | OUTPUT    | LVCMOS33  |       |       | OD        |
++---------------------+-----------+-----------+-------+-------+-----------+
+| led_green           | OUTPUT    | LVCMOS33  | O     |       | OD        |
++---------------------+-----------+-----------+-------+-------+-----------+
+
+Removed logic
+-------------
+
+Block i1 was optimized away.
+
+ASIC Components
+---------------
+
+Instance Name: send/signal
+         Type: IOLOGIC
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 0 secs
+   Total REAL Time: 0 secs
+   Peak Memory Usage: 55 MB
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    Page 3
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995
+     AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent
+     Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems
+     All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor
+     Corporation,  All rights reserved.
